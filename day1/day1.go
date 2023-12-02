@@ -1,4 +1,4 @@
-package main
+package day1
 
 import (
 	"bufio"
@@ -11,8 +11,8 @@ import (
 	"unicode"
 )
 
-func day1() {
-	file, err := os.Open("input.txt")
+func Day1() {
+	file, err := os.Open("./day1/input.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -52,7 +52,7 @@ func day1() {
 		temp, _ := strconv.Atoi(v)
 		returnValue += temp
 	}
-	fmt.Println(returnValue)
+	fmt.Printf("Day 1: %v \n", returnValue)
 }
 
 // 1abc2
