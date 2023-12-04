@@ -85,7 +85,6 @@ func Day3() {
 
 func getValidValues(t *Tracker, pos [][]int, numbers []int, row int) int {
 	ret := 0
-	// fmt.Println(pos)
 	var wasAdded []int
 	for i, x := range numbers {
 		postions := pos[i]
@@ -99,13 +98,6 @@ func getValidValues(t *Tracker, pos [][]int, numbers []int, row int) int {
 
 		}
 
-	}
-
-	for _, number := range numbers {
-		isIn := slices.Contains(wasAdded, number)
-		if !isIn {
-			fmt.Println("NOT IN", row, number)
-		}
 	}
 
 	for _, val := range wasAdded {
