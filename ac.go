@@ -1,7 +1,11 @@
 package main
 
-import "github.com/goetian/ac/day2"
+import (
+	"github.com/goetian/ac/day3"
+)
 
 func main() {
-	day2.Day2()
+	//day1.Day1()
+	//day2.Day2()
+	day3.Day3()
 }
